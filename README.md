@@ -7,7 +7,7 @@ sudo apt install ffmpeg
 ```
 Get the script:
 ```
-wget URL && sudo mv stream /bin/ && sudo chmod +x /bin/stream
+wget https://raw.githubusercontent.com/justaCasualCoder/USBCamStreamer/main/stream.sh && sudo mv stream.sh /bin/stream && sudo chmod +x /bin/stream
 ```
 Download and extract MediaMTX (Example on x86_64):
 ```
