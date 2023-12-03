@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define package details
-PACKAGE_NAME="cam"
+PACKAGE_NAME="USBCamStreamer"
 VERSION="0.1"
 MAINTAINER="justaCasualCoder"
 DESCRIPTION='Script for streaming video from USB cam to browser'

@@ -22,7 +22,7 @@ Available options:
 
 -h, --help       Print this help and exit
 -d, --debug      Print script debug info
--j, --mjpeg      Use MJPEG-STREAMER instead of ffmpeg
+-j, --mjpeg      Use MJPEG-STREAMER instead of Ffmpeg
 -a, --audio      Add Audio
 -r, --resolution Set resolution of video
 -w, --watch      Restart FFMPEG if it stops
@@ -85,7 +85,7 @@ if [ $MONITOR = 1 ]; then
   do
   stream
   if [ $UPTIME = 1 ]; then 
-    t="$(ping -c 1 192.168.39.166 | sed -ne '/.*time=/{;s///;s/\..*//;p;}' | cut -d' ' -f1)"
+    t="$(ping -c 1 $(echo $KUMAURL | cut -d "/" -f 3 ) | sed -ne '/.*time=/{;s///;s/\..*//;p;}' | cut -d' ' -f1)"
     curl "$KUMAURL${t}"
   fi
   if [ $NODEVICE = 1 ]; then
