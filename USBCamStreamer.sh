@@ -1,7 +1,7 @@
 #!/bin/bash
 #Arg Parse from https://betterdev.blog/minimal-safe-bash-script-template/
 #justaCasualCoder 2023 - https://github.com/justaCasualCoder
-#IP=192.168.39.182
+#IP=192.168.1.1
 IP=$(hostname -I)
 RES=1280x720
 AUDIO=0
@@ -16,7 +16,7 @@ usage() {
 cat <<EOF
 Usage: $(basename "${BASH_SOURCE[0]}") [-h] [-d] [-a] [-j] [-m] [-r] 1280x720 
 
-Script for streaming video from RPI usb cam to Zoneminder
+Script for streaming video from USB cam to Zoneminder
 
 Available options:
 

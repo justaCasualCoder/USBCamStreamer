@@ -7,7 +7,7 @@ sudo apt install ffmpeg
 ```
 Get the script:
 ```
-wget https://raw.githubusercontent.com/justaCasualCoder/USBCamStreamer/main/stream.sh && sudo mv stream.sh /bin/stream && sudo chmod +x /bin/stream
+wget https://raw.githubusercontent.com/justaCasualCoder/USBCamStreamer/main/USBCamStreamer.sh && sudo mv USBCamStreamer.sh /bin/USBCamStreamer && sudo chmod +x /bin/USBCamStreamer
 ```
 Download and extract MediaMTX (Example on x86_64):
 ```
@@ -15,12 +15,12 @@ wget https://github.com/bluenviron/mediamtx/releases/download/v1.3.1/mediamtx_v1
 ```
 Install MediaMTX:
 ```
-rm LICENSE && sudo mv mediamtx /bin/ && sudo mv mediamtx.yml /etc/ && sudo chmod +x /bin/# mediamtx
+rm LICENSE && sudo mv mediamtx /bin/ && sudo mv mediamtx.yml /etc/ && sudo chmod +x /bin/mediamtx
 ```
 Run the Script (Example using `/dev/video0` as source  at 720p and MediaMTX):
 ```
-stream -m -d /dev/video0 -r 1280x720
+USBCamStreamer -m -d /dev/video0 -r 1280x720
 ```
-See `stream -h` for usage (`man cam.manpage`).
+See `stream -h` for usage (`man USBCamStreamer`).
 # Build
-I have made `builddebian.sh` to compile `stream` into a `.deb`. I am planning on making a `PKGBUILD` for Arch Linux in the future.
+I have made `builddebian.sh` to compile `USBCamStreamer` into a `.deb`. I am planning on making a `PKGBUILD` for Arch Linux in the future.

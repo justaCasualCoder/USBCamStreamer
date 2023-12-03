@@ -18,8 +18,8 @@ mkdir -p "${MAN_DIR}"
 mkdir -p "${DEBIAN_DIR}"
 
 # Copy files to the temporary directory
-install -m 755 cam.sh "${BIN_DIR}/cam"
-install -m 644 cam.manpage "${MAN_DIR}/cam.1"
+install -m 755 USBCamStreamer.sh "${BIN_DIR}/USBCamStreamer"
+install -m 644 USBCamStreamer.manpage "${MAN_DIR}/USBCamStreamer.1"
 
 # Create the control file
 CONTROL_FILE="${DEBIAN_DIR}/control"

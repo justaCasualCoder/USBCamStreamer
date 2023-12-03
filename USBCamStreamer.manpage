@@ -3,7 +3,7 @@
 .SH NAME
 USBCamStreamer \- Stream USB Cam to browser
 .SH SYNOPSIS
-stream [-h] [-d] [-a] [-j] [-m] [-r] 1280x720 
+USBCamStreamer [-h] [-d] [-a] [-j] [-m] [-r] 1280x720 
 
 NOTE: IF you use MediaMTX, It is expected that you have the default conf in /etc/mediamtx.conf and mediamtx in /bin/mediamtx
 .SH DESCRIPTION
