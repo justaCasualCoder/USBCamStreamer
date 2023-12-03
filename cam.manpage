@@ -1,0 +1,22 @@
+.\" Manpage for USBCamStreamer
+.TH man 8  "27 November 2023" "1.2" "USBCamStreamer man page"
+.SH NAME
+USBCamStreamer \- Stream USB Cam to browser
+.SH SYNOPSIS
+stream [-h] [-d] [-a] [-j] [-m] [-r] 1280x720 
+
+NOTE: IF you use MediaMTX, It is expected that you have the default conf in /etc/mediamtx.conf and mediamtx in /bin/mediamtx
+.SH DESCRIPTION
+USBCamStreamer is a shell program for streaming a USB camera to rtsp/webrtc/srt/rtmp. It uses MediaMTX and FFmpeg
+.SH OPTIONS
+-h, --help       Print this help and exit
+-d, --debug      Print script debug info
+-j, --mjpeg      Use MJPEG-STREAMER instead of ffmpeg
+-a, --audio      Add Audio
+-r, --resolution Set resolution of video
+-w, --watch      Restart FFMPEG if it stops
+-u, --uptimekuma Curl Uptime Kuma url when ffmpeg stops
+-m, --mediamtx   Use MediaMTX to stream to multiple clients
+No known bugs.
+.SH AUTHOR
+JustaCusualCoder (https://github.com/justaCasualCoder)
