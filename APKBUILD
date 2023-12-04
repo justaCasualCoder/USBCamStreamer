@@ -1,4 +1,4 @@
-# Maintainer: Your Name <your@email.com>
+# Maintainer: justaCasualCoder
 pkgname=USBCamStreamer
 pkgver=0.1
 pkgrel=0
